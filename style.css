@@ -187,7 +187,7 @@ main>.card .text dd {
     margin: 10px 50px;
     border-radius: 50%;
     background-color: transparent;
-    transition: 0.5s;
+    transition: 0.4s;
 }
 
 .card>footer>a:hover {
