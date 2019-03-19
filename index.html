@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Alita</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="directory">
+            <ul class="clearfix">
+                <li><a href="#">Synopsis</a></li>
+                <li><a href="#">Credits</a></li>
+                <li><a href="#">Introduction</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Behind-the-scenes</a></li>
+                <li><a href="#">Production</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="bgimg">
+        <div class="hide"></div>
+    </div>
+    <main>
+        <div class="card">
+            <div class="picAndtext clearfix">
+                <div class="picture">
+                    <img src="./alita.jpg" style="width:300px; height: 400px;" alt="头像">
+                </div>
+                <div class="text">
+                    <span class="battle">Battle Angel</span>
+                    <h1>ALITA</h1>
+                    <hr>
+                    <dl class="clearfix">
+                        <dt>Chinese Name</dt>
+                        <dd style="font-family:楷体;font-size: 22px;">阿丽塔</dd>
+                        <dt>Production Company</dt>
+                        <dd>20th CENTURY FOX</dd>
+                        <dt>Director</dt>
+                        <dd>Robert Rodriguez</dd>
+                        <dt>Producer</dt>
+                        <dd>James Cameron</dd>
+                        <dt>Release Time</dt>
+                        <dd>2019-2-22</dd>
+                        <dt>Language</dt>
+                        <dd>English</dd>
+                    </dl>
+                </div>
+            </div>
+            <footer>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-LOL-xiaolong"></use>
+                    </svg>
+                </a>
+                <a href="#"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-kandao"></use>
+                    </svg></a>
+                <a href="#"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-Battlenet_icon_flat"></use>
+                    </svg></a>
+                <a href="#"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-fight"></use>
+                    </svg></a>
+                <a href="#"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-firefighter01"></use>
+                    </svg></a>
+                <a href="#"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-guang"></use>
+                    </svg></a>
+            </footer>
+        </div>
+        <p class="downloadbutton-wrapper"><a class="downloadbutton" href="./Alita.pdf" target="_blank" download>DOWNLOAD</a> </p>
+        <p class="introduction">In 2563, a catastrophic war known as "The Fall" aka "The Great War" has left Earth devastated. While scouting the junkyard metropolis of Iron City, cyborg scientist Dr. Dyson Ido discovers a disembodied female cyborg with a fully intact human brain. Ido attaches a cyborg body to the brain, who does not have any recollections of her past, and names her "Alita" after his deceased daughter, for whom he originally built the body. </p>
+    </main>
+    <section class="skills">
+        <h2>ABILITY</h2>
+        <ul class="clearfix">
+            <li>
+                <h3>Power</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 90%"></div>
+                </div>
+            </li>
+            <li>
+                <h3>Intelligence</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 95%"></div>
+                </div>
+            </li>
+            <li>
+                <h3>Agile</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 85%"></div>
+                </div>
+            </li>
+            <li>
+                <h3>Speed</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 83%"></div>
+                </div>
+            </li>
+            <li>
+                <h3>Resistance</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 92%"></div>
+                </div>
+            </li>
+            <li>
+                <h3>Charm</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 100%"></div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="album">
+        <h2>ALBUM</h2>
+        <nav>
+            <ul class="clearfix">
+                <li id="album1">All</li>
+                <li id="album2">Life</li>
+                <li id="album3">Fight</li>
+            </ul>
+            <div id="albumBar" class="bar state-1">
+                <div class="bar-inner"></div>
+            </div>
+        </nav>
+        <div class="img" style="height: 576px;">
+            <div class="big" style="top: 0; left: 0;"><img src="./1.jpg" alt="pic1" style=" height: 432px; width: 768px;"></div>
+            <div class="small" style="top: 0; left: 845px;"><img src="./2.jpg" alt="pic2" style=" height: 194px; width: 360px;"></div>
+            <div class="small" style="top:237px; left: 845px;"><img src="./3.jpg" alt="pic3" style=" height: 194px; width: 360px;"></div>
+        </div>
+    </section>
+    <script src="//at.alicdn.com/t/font_1078164_d478mkrixfd.js"></script>
+    <script>
+        album1.onclick = function () {
+            albumBar.className = 'bar state-1'
+        }
+        album2.onclick = function () {
+            albumBar.className = 'bar state-2'
+        }
+        album3.onclick = function () {
+            albumBar.className = 'bar state-3'
+        }
+    </script>
+</body>
+
+</html>

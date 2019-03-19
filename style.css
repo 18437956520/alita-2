@@ -1,0 +1,340 @@
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+body {
+    background-color: #030101;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header .directory {
+    padding: 40px;
+}
+
+.header .directory>ul>li {
+    float: left;
+    margin: 0 20px;
+}
+
+.header .directory>ul>li>a {
+    display: block;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-family: 'Franklin Gothic Medium';
+    border-bottom: 3px solid transparent;
+    transition: 0.4s;
+}
+
+.header .directory>ul>li>a:hover {
+    border-bottom: 3px solid #FFFF4C;
+    border-radius: 1px;
+}
+
+.bgimg {
+    background-image: url(./headd.jpg);
+    height: 1000px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.bgimg .hide {
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+main>.card {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-left: 1px solid white;
+    box-shadow: -19px 0px 66px -29px rgba(255, 255, 255, 0.7);
+}
+
+main>.card .picAndtext {
+    padding: 80px;
+}
+
+main>.card .picAndtext .text {
+    margin-left: 100px;
+    width: 600px;
+}
+
+main>.card .picAndtext .text .battle {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding-top: 2px;
+    font-size: 25px;
+    box-sizing: border-box;
+}
+
+main>.card .picAndtext .text .battle {
+    width: 220px;
+    height: 40px;
+    position: relative;
+    background: red;
+}
+
+main>.card .picAndtext .text .battle::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-left: 20px solid #030101;
+
+}
+
+main>.card .picAndtext .text .battle::before {
+    content: "";
+    position: absolute;
+    right: -40px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-left: 20px solid red;
+}
+
+main>.card .picture {
+    float: left;
+}
+
+main>.card .text {
+    float: left;
+}
+
+main>.card .text h1 {
+    margin: 20px 0;
+
+}
+
+main>.card .text hr {
+    margin: 20px 0;
+}
+
+main>.card .text dt,
+main>.card .text dd {
+    float: left;
+    padding: 10px 0;
+}
+
+main>.card .text dt {
+    width: 55%;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+main>.card .text dd {
+    width: 45%;
+}
+
+.card svg {
+    width: 30px;
+    height: 30px;
+    fill: white;
+    vertical-align: top;
+}
+
+.card>footer {
+    background-color: #030101;
+    text-align: center;
+    border-top: 1px solid white;
+}
+
+.card>footer>a {
+    display: inline-block;
+    width: 60px;
+    line-height: 20px;
+    padding: 15px 0;
+    margin: 10px 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.card>footer>a:hover {
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+main {
+    margin-top: -200px;
+}
+
+main .downloadbutton-wrapper {
+    text-align: center;
+}
+
+main .downloadbutton {
+    border: 1px solid white;
+    display: inline-block;
+    line-height: 30px;
+    padding: 20px 60px;
+    margin: 80px 0;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+main .downloadbutton:hover {
+    box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.7);
+}
+
+.introduction {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    box-shadow: 0px 0px 40px -10px rgba(255,255,255,0.7);
+}
+
+section.skills,
+section.album {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section.skills h2,
+section.album h2 {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    line-height: 1.2;
+    font-size: 30px;
+}
+
+section.skills>ul {
+    /* border: 1px solid white; */
+    padding: 20px;
+    box-shadow: 0px 0px 40px -10px rgba(255,255,255,0.7);
+}
+
+section.skills>ul>li {
+    float: left;
+    width: 48%;
+}
+
+section.skills>ul>li:nth-child(even) {
+    float: right;
+}
+
+section.skills>ul>li .progressBar {
+    border: 1px solid white;
+    height: 10px;
+    margin: 10px 10px 20px 0;
+}
+
+section.skills>ul>li .progress {
+    background-color: white;
+    height: 10px;
+}
+
+section.skills>ul>li>h3 {
+    line-height: 1.6;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+section.album{
+    text-align: center;
+}
+
+section.album ul{
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+section.album li{
+    float: left;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+section.album li:nth-child(2){
+    margin: 0 80px;
+}
+
+section.album nav{
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 30px;
+}
+
+section.album>nav .bar{
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 5px;
+    border-radius: 5px;
+    margin-top: 10px;;
+}
+
+section.album>nav .bar-inner{
+    height: 100%;
+    border-radius: 5px;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+section.album>nav .bar.state-1 .bar-inner {
+    margin-left: 0;
+    width: 30px;
+}
+
+section.album>nav .bar.state-2 .bar-inner {
+    margin-left: 39%;
+    width: 38px;
+}
+
+section.album>nav .bar.state-3 .bar-inner {
+    margin-left: 81%;
+    width: 55px;
+}
+
+section.album .img {
+    position: relative;
+}
+
+section.album .img>.big,
+section.album .img>.small {
+    position: absolute;
+    box-shadow: 0px 0px 40px -10px rgba(255,255,255,0.7);
+}
